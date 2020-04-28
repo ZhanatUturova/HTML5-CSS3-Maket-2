@@ -1,0 +1,17 @@
+@mixin awesome {
+	font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+	font-weight: 900;
+}
+
+@mixin logo {
+	font-family: $main-font;
+	font-size: $fz;
+	line-height: $lh;
+	color: $color;
+}
+
+@mixin font ($fz, $lh, $color) {
+	font-size: $fz;
+	line-height: $lh;
+	color: $color;
+}

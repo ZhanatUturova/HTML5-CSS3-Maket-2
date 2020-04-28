@@ -1,0 +1,24 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_fonts.scss";
+
+body {
+	font-family: $main-font;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+
+@import "_header.scss";
+@import "_services.scss";
+@import "_ideas.scss";
+@import "_aside.scss";
+
+@import "_media.scss";

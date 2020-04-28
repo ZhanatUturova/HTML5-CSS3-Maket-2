@@ -1,0 +1,62 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_media.scss";
+@import "_fonts.scss";
+
+.ideas {
+	width: 100%;
+	background: $ideas-bg;
+	&__container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 83px;
+		text-align: center;
+		position: relative;
+		min-height: 710px;
+		box-sizing: border-box;
+	}
+	&__title {
+		font-size: 30px;
+		font-weight: 600;
+		color: $title-color;
+		margin-bottom: 24px;
+	}
+	&__text {
+		width: 760px;
+		font-family: $txt-font;
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 300;
+		color: $color;
+		margin: 0;
+	}
+	&__img {
+		position: absolute;
+		transition: all .4s;
+		&:hover {
+			z-index: 20;
+			height: 482px;
+		}
+	}
+	&__img_left {
+		bottom: 0;
+		left: -50px;
+	}
+	&__img_center {
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 5;
+	}
+	&__img_right{
+		bottom: 0;
+		right: -50px;
+	}
+	&__img_left:hover ~ .ideas__img_center{
+		height: 400px;
+	}
+	&__img_right:hover + .ideas__img_center{
+		height: 400px;
+	}
+}

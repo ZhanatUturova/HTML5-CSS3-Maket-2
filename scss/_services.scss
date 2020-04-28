@@ -1,0 +1,57 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+@import "_media.scss";
+@import "_fonts.scss";
+
+/* Блок с услугами */
+
+.services {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0;
+	&__icon {
+		fill: $title-color;
+		stroke: $title-color;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-left: 30px;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 70px;
+			height: 3px;
+			background: $services-line;
+		}
+		&:hover > .services__icon {
+			fill: $hover-color;
+			stroke: $hover-color;
+		}
+		&:hover > .services__title {
+			color: $hover-color;
+		}
+		&:hover:after {
+			background: $hover-color;
+		}
+	}
+	&__title {
+		font-size: 22px;
+		font-weight: 600;
+		color: $title-color;
+		margin-top: 30px;
+	}
+	&__text {
+		font-family: $txt-font;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 300;
+		color: $color;
+		margin: 19px auto 30px;
+	}
+}
