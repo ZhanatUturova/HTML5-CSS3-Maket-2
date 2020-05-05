@@ -6,13 +6,13 @@
 	background-color: $light-bg;
 	background-image: url(../img/iphone.png);
 	background-repeat: no-repeat;
-	background-position: 450px 80px;
+	background-position: 33% 80px;
 	min-height: 695px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	&__box {
-		margin-right: 150px;
+		margin-right: 8%;
 	}
 	&__title {
 		margin-bottom: 40px;

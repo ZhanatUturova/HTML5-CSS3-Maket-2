@@ -868,7 +868,7 @@ a {
   background-color: #fbfaf8;
   background-image: url(../img/iphone.png);
   background-repeat: no-repeat;
-  background-position: 450px 80px;
+  background-position: 33% 80px;
   min-height: 695px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -882,7 +882,7 @@ a {
 }
 
 .mobile__box {
-  margin-right: 150px;
+  margin-right: 8%;
 }
 
 .mobile__title {
