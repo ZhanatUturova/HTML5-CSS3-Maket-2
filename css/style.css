@@ -73,7 +73,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "raleway", verdana, sans-serif;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -103,7 +103,7 @@ a {
 
 .text {
   width: 760px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -189,7 +189,7 @@ a {
 }
 
 .nav__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
@@ -259,7 +259,7 @@ a {
   border-bottom: 1px solid #fff;
   width: 170px;
   min-height: 20px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
@@ -331,7 +331,7 @@ a {
 
 .txt__text {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -466,7 +466,7 @@ a {
 }
 
 .services__text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -570,7 +570,7 @@ a {
 }
 
 .ad__text {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   width: 550px;
   font-size: 18px;
   line-height: 1.2;
@@ -654,7 +654,7 @@ a {
   padding: 10px 22px 8px;
   border-right: 3px;
   border: 1px solid #ebebeb;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #8c8c8c;
@@ -760,7 +760,7 @@ a {
 }
 
 .projects__item_txt {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
@@ -800,7 +800,7 @@ a {
   color: #998675;
 }
 
-/* Секция видео */
+/* Секция видео презентации */
 .presentation {
   width: 1903px;
   height: 705px;
@@ -846,7 +846,7 @@ a {
 
 .presentation__text {
   width: 555px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -855,7 +855,7 @@ a {
 }
 
 .presentation__time {
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -933,7 +933,7 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: "montserrat", verdana, sans-serif;
 }
 
 .statistics__item:first-child {
