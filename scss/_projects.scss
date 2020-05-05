@@ -1,0 +1,137 @@
+
+/* Секция последних проектов*/
+
+.projects {
+	flex-direction: column;
+	align-items: center;
+	&__nav {
+		width: 605px;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+	&__link {
+		display: block;
+		padding: 10px 22px 8px;
+		border-right: 3px;
+		border: 1px solid $projects_link_border;
+		font-family: $txt-font;
+		font-size: 14px;
+		font-weight: 300;
+		color: $color;
+		text-transform: capitalize;
+		&_all {
+			padding: 10px 25px 8px;
+		}
+		&:hover {
+			background: $btn-bg;
+			color: $light-color;
+		}
+	}
+	&__box {
+		width: 1170px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__img {
+		display: block;
+	}
+	&__item {
+		width: 370px;
+		position: relative;
+		&:first-child,
+		&:nth-child(2),
+		&:nth-child(3) {
+			margin-bottom: 30px;
+		}
+		&:nth-child(4),
+		&:nth-child(5),
+		&:nth-child(6) {
+			margin-bottom: 40px;
+		}
+		&:hover .projects__item_link {
+			display: block;
+		}
+		&:hover .projects__item_search {
+			display: block;
+		}
+		&:hover .projects__item_link:hover {
+			background-image: url(../img/link_hover.svg);
+		}
+		&:hover .projects__item_search:hover {
+			background-image: url(../img/lupa_hover.svg);
+		}
+		&:hover .projects__img {
+			filter: brightness(35%);
+		}
+		&:hover .projects__item_text {
+			background-color: $posts-hover-bg;
+		}
+		&:hover .projects__item_text:before {
+			border-bottom: 10px solid $posts-hover-bg;
+		}
+		&:hover .projects__item_title {
+			color: $light-color;
+		}
+		&:hover .projects__item_txt {
+			color: $hover-color;
+		}
+		&_text {
+			padding: 30px 0 27px 30px;
+			background: $light-bg;
+			position: relative;
+			&:before {
+				content: "";
+				border: 17px solid transparent;
+				border-bottom: 10px solid $light-bg;
+				position: absolute;
+				top: -27px;
+				left: 19px;
+			}
+		}
+		&_title {
+			font-size: 20px;
+			font-weight: 500;
+			color: $hover-color;
+			display: block;
+			margin-bottom: 10px;
+		}
+		&_txt {
+			font-family: $txt-font;
+			font-size: 14px;
+			line-height: 20px;
+			font-weight: 300;
+			color: $projects_color;
+			display: block;
+		}
+		&_link,
+		&_search {
+			width: 20px;
+			height: 20px;
+			display: none;
+			border: none;
+			background-color: transparent;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			outline: none;
+			top: 45%;
+		}
+		&_link {
+			background-image: url(../img/link.svg);
+			left: 40%;
+		}
+		&_search {
+			background-image: url(../img/lupa.svg);
+			right: 40%;
+		}
+	}
+	&__btn {
+		border: none;
+		&:hover {
+			color: $btn-bg;
+		}
+	}
+}

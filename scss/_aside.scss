@@ -1,15 +1,13 @@
-@import "_mixins.scss";
-@import "_variables.scss";
-@import "_media.scss";
-@import "_fonts.scss";
 
-/* aside рекламы */
+/* aside реклама */
 
 .ad {
 	width: 100%;
 	background: $aside-gradient;
+	justify-content: center;
 	padding: 50px 0;
 	&__container {
+		width: 1170px;
 		display: flex;
 		justify-content: space-between;
 	}

@@ -1,0 +1,43 @@
+
+/* Секция мобильной версии */
+
+.mobile {
+	width: 100%;
+	background-color: $light-bg;
+	background-image: url(../img/iphone.png);
+	background-repeat: no-repeat;
+	background-position: 450px 80px;
+	min-height: 695px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	&__box {
+		margin-right: 150px;
+	}
+	&__title {
+		margin-bottom: 40px;
+	}
+	&__text {
+		width: 657px;
+		margin-bottom: 45px;
+	}
+	&__list {
+		list-style-type: none;
+		line-height: 32px;
+		margin: 0 0 0 50px;
+	}
+	&__item {
+		position: relative;
+	}
+	&__item:before {
+		content: "";
+		display: block;
+		width: 21px;
+		height: 21px;
+		background-image: url(../img/arrow_icon.png);
+		position: absolute;
+		top: 5px;
+		left: -40px;
+	}
+
+}

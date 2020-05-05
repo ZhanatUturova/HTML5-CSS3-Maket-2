@@ -1,0 +1,44 @@
+
+/* Секция статистики */
+
+.statistics {
+	padding: 69px 0 60px;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		width: 140px;
+		margin-left: 70px;
+		align-items: center;
+		font-family: $txt-font;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:after {
+			content: "";
+			display: block;
+			margin-top: 30px;
+			width: 30px;
+			height: 2px;
+			background-color: $light-color;
+		}
+	}
+	&__icon {
+		fill: $hover-color;
+	}
+	&__number {
+		display: block;
+		margin: 30px auto 21px;
+		font-size: 48px;
+		line-height: 36px;
+		font-weight: 200;
+		color: $light-color;
+	}
+	&__text {
+		display: block;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: $hover-color;
+	}
+}
