@@ -13,19 +13,25 @@
 	&__link {
 		display: block;
 		padding: 10px 22px 8px;
-		border-right: 3px;
+		border-radius: 3px;
+		background-color: $projects_link_border;
 		border: 1px solid $projects_link_border;
 		font-family: $txt-font;
 		font-size: 14px;
 		font-weight: 300;
 		color: $color;
 		text-transform: capitalize;
+		outline: none;
 		&_all {
 			padding: 10px 25px 8px;
 		}
 		&:hover {
 			background: $btn-bg;
 			color: $light-color;
+		}
+		&:active {
+			background-color: $projects_link_border;
+			color: $color;
 		}
 	}
 	&__box {
@@ -130,8 +136,12 @@
 	}
 	&__btn {
 		border: none;
+		outline: none;
 		&:hover {
 			color: $btn-bg;
+		}
+		&:active {
+			color: $light-color;
 		}
 	}
 }

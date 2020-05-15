@@ -1,0 +1,214 @@
+
+/* Подвал сайта */
+
+.basement{
+	width: 100%;
+	background-color: $footer-main-bg;
+	justify-content: center;
+	&__item {
+		width: 270px;
+		margin-left: 30px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__logo {
+		width: 181px;
+		margin-bottom: 25px;
+		transition: transform 0.2s ease;
+		transform-origin: left center;
+	}
+	&__text {
+		font-family: $txt-font;
+		font-size: 14px;
+		line-height: 24px;
+		color: $title-color;
+		margin: 0 0 30px 0;
+	}
+	&__link {
+		font-weight: 400;
+		color: #d1d1d1;
+		&:after {
+			border-left: 5px solid #d1d1d1;
+		}
+	}
+	&__title {
+		display: block;
+		font-size: 24px;
+		font-weight: 700;
+		color: $light-color;
+		margin: 0 0 26px 0;
+	}
+}
+.waxom {
+	cursor: pointer;
+}
+.waxom:hover > .basement__logo{
+	transform: scale(1.1);
+}
+.waxom:active > .basement__logo {
+			transform: scale(1);
+}
+.waxom:hover > .basement__text {
+	color: $hover-color;
+}
+.waxom:active > .basement__text {
+	color: $title-color;
+}
+.waxom:hover > .basement__link {
+	color: $hover-color;
+	transform: scale(1.1);
+	font-weight: 500;
+	color: $light-color;
+	&:after {
+		border-left: 5px solid $light-color;
+	}	
+}
+.waxom:active > .basement__link {
+	color: $hover-color;
+	transform: scale(1);
+	&:after {
+		border-left: 5px solid $hover-color;
+	}
+}
+.post {
+	display: block;
+	&__time {
+		font-family: $txt-font;
+		font-size: 12px;
+		line-height: 20px;
+		font-weight: 300;
+		color:$footer-color;
+		margin: 0 0 5px 0;
+	}
+	&__text {
+		line-height: 20px;
+		margin-bottom: 20px;
+	}
+	&:after {
+		content: "";
+		display: block;
+		width: 270px;
+		height: 2px;
+		background-color: $footer-color;
+		margin-bottom: 20px;
+	}
+	&:last-child:after {
+		display: none;
+	}
+	&:hover > .post__time {
+		color: $light-color;
+	}
+	&:hover > .post__text {
+		color: $hover-color;
+	}
+	&:active > .post__time {
+		color: $footer-color;
+	}
+	&:active > .post__text {
+		color: $title-color;
+	}
+}
+.twitter {
+	&__text {
+		margin: 0 0 7px 0;
+	}
+	&__link {
+		color: $twitter_link;
+	}
+	&__time {
+		display: block;
+		margin-bottom: 20px;
+	}
+	&__site {
+		color: #959595;
+	}
+	&:hover > .twitter__text > .twitter__link {
+		color: $light-color;
+	}
+	&:active > .twitter__text > .twitter__link {
+		color: $twitter_link;
+	}
+	&:hover > .twitter__text {
+		color: $hover-color;
+	}
+	&:active > .twitter__text {
+		color: $title-color;
+	}
+	&:hover > .twitter__text > .twitter__site {
+		color: $twitter_link;
+	}
+	&:active > .twitter__text > .twitter__site {
+		color: #959595;
+	}
+}
+.dribbble {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__img:nth-child(3),
+	&__img:nth-child(4) {
+		margin-top: 10px;
+	}
+	&__img {
+		transition: transform 0.2s ease;
+	}
+	&__img:hover {
+		transform: scale(1.05);
+	}
+}
+
+/* Самая нижняя секция о правах */
+
+.law {
+	width: 100%;
+	padding: 45px 0 52px;
+	background-color: $footer-bg;
+	&__container {
+		width: 1170px;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	&__wrap {
+		display: flex;
+	}
+	&__design {
+		text-align: right;
+		display: flex;
+	}
+	&__link {
+		display: block;
+		height: 14px;
+		padding: 0 10px;
+		font-family: $txt-font;
+		font-size: 13px;
+		line-height: 14px;
+		font-weight: 300;
+		color: $title-color;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+		&:hover {
+			color: $hover-color;
+		}
+		&:active {
+			color: $title-color;
+		}
+		&:hover > .law__text{
+			color: $light-color;
+		}
+		&:active > .law__text{
+			color: #959595;
+		}
+	}
+	&__text {
+		color: #959595;
+	}
+	&__border {
+		border-right: 1px solid #252525;
+	}
+}

@@ -3,6 +3,10 @@
 
 .statistics {
 	padding: 69px 0 60px;
+	width: 100%;
+	background: $aside-gradient;
+	justify-content: center;
+	padding: 50px 0;
 	&__item {
 		display: flex;
 		flex-direction: column;

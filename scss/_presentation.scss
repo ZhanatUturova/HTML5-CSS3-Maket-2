@@ -2,11 +2,13 @@
 /* Секция видео презентации */
 
 .presentation {
-	width: 1903px;
+	max-width: 1903px;
+	width: 100%;
 	height: 705px;
 	position: relative;
 	text-align: center;
 	box-sizing: border-box;
+	margin: 0 auto;
 	&__video {
 		width: 100%;
 		height: 100%;
@@ -28,6 +30,9 @@
 		background-position: center;
 		&:hover {
 			background-image: url(../img/play_hover.svg);
+		}
+		&:active {
+			background-image: url(../img/play.svg);
 		}
 	}
 	&__title {

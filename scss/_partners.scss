@@ -1,0 +1,28 @@
+
+/* Секция с логотипами партнеров */
+
+.partners {
+	max-width: 1920px;
+	width: 100%;
+	background-image: url(../img/partners_bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 140px 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	&__link {
+		display: block;
+		margin-left: 90px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&__logo:hover {
+		transform: scale(1.1);
+	}
+	&__logo:active {
+		transform: scale(1);
+	}
+}

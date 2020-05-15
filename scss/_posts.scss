@@ -1,0 +1,155 @@
+
+/* Секция недавних постов */
+
+.posts {
+	flex-direction: column;
+	align-items: center;
+	&__box {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	&__article {
+		width: 370px;
+		margin-left: 30px;
+		position: relative;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:hover > .posts__img {
+			filter: brightness(35%);
+		}
+		&:hover > .posts__date > .posts__date_day {
+			background-color: $hover-color;
+		}
+		&:hover > .posts__date > .posts__date_month {
+			background-color: $month_bg_hover;
+		}
+		&:hover > .posts__text {
+			background-color: $posts-hover-bg;
+		}
+		&:hover > .posts__text > .posts__text_title {
+			color: $hover-color;
+		}
+		&:hover > .posts__text > .posts__text_txt {
+			color: $light-color;
+		}
+	}
+	&__img {
+		display: block;
+	}
+	&__date {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		width: 50px;
+		height: 60px;
+		text-align: center;
+		&_day {
+			display: block;
+			height: 35px;
+			background-color: $day-bg;
+			border-radius: 3px 3px 0 0;
+			font-family: $txt-font;
+			font-size: 24px;
+			line-height: 38px;
+			font-weight: 300;
+			color: $light-color;
+		}
+		&_month {
+			display: block;
+			height: 25px;
+			background-color: $month_bg;
+			border-radius: 0 0 3px 3px ;
+			font-family: Roboto;
+			font-size: 12px;
+			line-height: 25px;
+			font-weight: 400;
+			color: $light-color;
+			text-transform: capitalize;
+		}
+	}
+	&__text {
+		padding: 30px;
+		&_title {
+			display: block;
+			font-size: 20px;
+			font-weight: 500;
+			color: $title-color;
+			margin: 0 0 19px 0;
+		}
+		&_txt {
+			font-family: $txt-font;
+			font-size: 14px;
+			line-height: 22px;
+			font-weight: 300;
+			color: $color;
+			margin: 0 0 25px 0;
+		}
+		&_link {
+			display: block;
+			height: 15px;
+			font-family: $txt-font;
+			font-size: 14px;
+			font-weight: 300;
+			color: $hover-color;
+			text-transform: capitalize;
+			transition: transform 0.2s ease;
+			transform-origin: left center;
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 15px;
+				margin-left: 9px;
+				border: 4px solid transparent;
+				border-left: 5px solid $hover-color;
+			}
+			&:hover {
+				transform: scale(1.1);
+				font-weight: 500;
+				color: $light-color;
+				&:after {
+					border-left: 5px solid $light-color;
+				}
+			}
+			&:active {
+				transform: scale(1);
+				color: $hover-color;
+				font-weight: 300;
+				&:after {
+					border-left: 5px solid $hover-color;
+				}
+			}
+		}
+	}
+}
+.circle_btn {
+	width: 22px;
+	height: 22px;
+	background-color: transparent;
+	border: 2px solid $circle_button;
+	border-radius: 50%;
+	outline: none;
+	transition: transform 0.2s;
+	&__arrow {
+		display: block;
+		width: 6px;
+		height: 6px;
+		border-top: 2px solid $circle_button;
+		border-left: 2px solid $circle_button;
+	}
+	&_left {
+		transform: rotate(-45deg);
+	}
+	&_right {
+		transform: translateX(-2px) rotate(135deg);
+	}
+	&:hover {
+		border: 2px solid $hover-color;
+		transform: scale(1.1);
+	}
+	&:hover > .circle_btn__arrow {
+		border-top: 2px solid $hover-color;
+		border-left: 2px solid $hover-color;
+	}
+}

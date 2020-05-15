@@ -4,15 +4,13 @@
 .mobile {
 	width: 100%;
 	background-color: $light-bg;
-	background-image: url(../img/iphone.png);
-	background-repeat: no-repeat;
-	background-position: 33% 80px;
-	min-height: 695px;
+	padding-top: 80px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	align-items: center;
 	&__box {
-		margin-right: 8%;
+		margin-left: 30px;
+		max-width: 660px;
 	}
 	&__title {
 		margin-bottom: 40px;
